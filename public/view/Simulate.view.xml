@@ -43,6 +43,7 @@
                     <core:ListItem key="INBOUND" text="Inbound" />
                     <core:ListItem key="TRANSFER" text="Transfer" />
                     <core:ListItem key="UPDATEACTIVITY" text="Update Activity" />
+                    <core:ListItem key="MESSAGE" text="Update Activity" />
                 </items>
             </ComboBox>
             <Label text="Activity UUID" labelFor="ActivityUUID"/>
