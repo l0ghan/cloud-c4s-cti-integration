@@ -31,9 +31,6 @@ c4c.cti.integration.getInstance = function () {
  */
 c4c.cti.integration.prototype.sendIncomingCalltoC4C = function (parameters) {
 	// var payload = this._formXMLPayload(parameters);
-	parameters.Type = 'CALL';
-	parameters.EventType = 'INBOUND';
-	parameters.Action = 'NOTIFY';
 	console.log(parameters);
 	var payload = this._formJSONPayload(parameters);
 	this._doCall(payload);
@@ -44,9 +41,6 @@ c4c.cti.integration.prototype.sendIncomingCalltoC4C = function (parameters) {
  */
 c4c.cti.integration.prototype.sendEndCalltoC4C = function (parameters) {
 	// var payload = this._formXMLPayload(parameters);
-	parameters.Type = 'CALL';
-	parameters.EventType = 'UPDATEACTIVITY';
-	parameters.Action = 'END';
 	console.log(parameters);
 	var payload = this._formJSONPayload(parameters);
 	this._doCall(payload);
@@ -68,7 +62,7 @@ c4c.cti.integration.prototype.sendIncomingChatToC4C = function (parameters) {
 c4c.cti.integration.prototype._doCall = function (sPayload) {
 	if (window.parent !== window) {
 		//todo: Replace the * with the corresponding Service Cloud tenant.
-		window.parent.postMessage(sPayload, '*');
+		window.parent.postMessage(sPayload, 'https://my362566.crm.ondemand.com/');
 	}
 };
 
