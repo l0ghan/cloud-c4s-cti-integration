@@ -43,7 +43,6 @@
                     <core:ListItem key="INBOUND" text="Inbound" />
                     <core:ListItem key="TRANSFER" text="Transfer" />
                     <core:ListItem key="UPDATEACTIVITY" text="Update Activity" />
-                    <core:ListItem key="MESSAGE" text="Update Activity" />
                 </items>
             </ComboBox>
             <Label text="Activity UUID" labelFor="ActivityUUID"/>
@@ -53,7 +52,7 @@
                     <items>
                         <core:ListItem key="CALL" text="Call" />
                         <core:ListItem key="CHAT" text="Chat" />
-                        <core:ListItem key="MESSAGE" text="Sms" />
+                        <core:ListItem key="MESSAGE" text="Message" />
                     </items>
                 </ComboBox>
             <Label text="SMS Text" labelFor="Text-1"/>
