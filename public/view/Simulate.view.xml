@@ -52,9 +52,19 @@
                     <items>
                         <core:ListItem key="CALL" text="Call" />
                         <core:ListItem key="CHAT" text="Chat" />
+                        <core:ListItem key="MESSAGE" text="Sms" />
                     </items>
                 </ComboBox>
-
+            <Label text="SMS Text" labelFor="Text-1"/>
+            <Input  id = "Text-1" value="{/Text}"  />
+                        <Label text="Action" labelFor="Action-1"/>
+                <ComboBox id = "Action-1"  selectedKey="{/Action}">
+                    <items>
+                        <core:ListItem key="NOTIFY" text="Notify" />
+                        <core:ListItem key="ACCEPT" text="Accept" />
+                        <core:ListItem key="END" text="End" />
+                    </items>
+                </ComboBox>
             </f:content>
         </f:SimpleForm>
         <footer>
