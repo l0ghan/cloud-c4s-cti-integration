@@ -10,6 +10,7 @@
                 <Link text="Open External Simulator" href="{/SimulateLink}" target="_blank"/>
                 <Label text="Incoming message from external" labelFor="incomingMessageText-1"/>
                 <Text   id="incomingMessageText-1" text="{/messageText}"/>
+                
             </l:VerticalLayout>
     </Panel>
 </mvc:View>

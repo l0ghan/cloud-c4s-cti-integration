@@ -1,0 +1,88 @@
+<mvc:View
+        xmlns:l="sap.ui.layout"
+        xmlns:mvc="sap.ui.core.mvc"
+        xmlns:f="sap.ui.layout.form"
+        xmlns="sap.m"
+        controllerName="sap.ui.c4c.widget.UgapView">
+
+    <l:VerticalLayout>
+                <Label text="Incoming message from external" labelFor="incomingMessageText-1"/>
+                <Text   id="incomingMessageText-1" text="{/messageText}"/>
+            <Label text="Phone Number" labelFor="ani-1"/>
+            <Input id="ani-1" type="Tel" value="{/ANI}"  />
+            <Label text="ExternalReferenceID" labelFor="extneranlid-1"/>
+            <Input  id="extneranlid-1" value="{/ExternalReferenceID}" />
+            <Label text="Original Reference ID" labelFor="ExternalOriginalReferenceID-1"/>
+            <Input  id = "ExternalOriginalReferenceID-1" value="{/ExternalOriginalReferenceID}"  />
+            <Label text="Event Type"  labelFor="eventtypecomb-1" />
+            <ComboBox id = "eventtypecomb-1"  selectedKey="{/EventType}">
+                <items>
+                    <core:ListItem key="OUTBOUND" text="Outbound" />
+                    <core:ListItem key="INBOUND" text="Inbound" />
+                    <core:ListItem key="TRANSFER" text="Transfer" />
+                    <core:ListItem key="UPDATEACTIVITY" text="Update Activity" />
+                </items>
+            </ComboBox>
+                        <Label text="Type" labelFor="Type-1"/>
+                <ComboBox id = "Type-1"  selectedKey="{/Type}">
+                    <items>
+                        <core:ListItem key="CALL" text="Call" />
+                        <core:ListItem key="CHAT" text="Chat" />
+                        <core:ListItem key="MESSAGE" text="Message" />
+                    </items>
+                </ComboBox>
+                <Label text="Action" labelFor="Action-1"/>
+                <ComboBox id = "Action-1"  selectedKey="{/Action}">
+                    <items>
+                        <core:ListItem key="NOTIFY" text="Notify" />
+                        <core:ListItem key="ACCEPT" text="Accept" />
+                        <core:ListItem key="END" text="End" />
+                    </items>
+                </ComboBox>
+<!--             <Label text="Ticket ID" labelFor="ticketid-1"/>
+            <Input  id="ticketid-1" value="{/TicketID}"  />
+
+            <Label text="Serial ID" labelFor="serialid-1"/>
+            <Input  id="serialid-1" value="{/Serial}" />
+            <Label text="Dialled Number" labelFor="dnis-1"/>
+            <Input  id="dnis-1" type="Tel" value="{/DNIS}" />
+            <Label text="Business Partner Number" labelFor="-1"/>
+            <Input  id="bp-1" value="{/BP}" />
+            <Label text="Custom field 1" labelFor="custom1-1"/>
+            <Input  id = "custom1-1" value="{/Custom_1}"  />
+            <Label text="Custom field 2" labelFor="custom2-1"/>
+            <Input  id = "custom2-2" value="{/Custom_2}"  />
+            <Label text="Custom field 3" labelFor="custom3-1"/>
+            <Input  id = "custom3-1" value="{/Custom_3}"  />
+            <Label text="Custom field 4" labelFor="custom4-1"/>
+            <Input  id = "custom4-1" value="{/Custom_4}"  />
+            <Label text="Email" labelFor="email-1"/>
+            <Input  id = "email-1" value="{/Email}"  />
+
+            <Label text="Transcript" labelFor="Transcript-1"/>
+            <TextArea id="Transcript-1"
+                      value="{/Transcript}"
+            />
+
+            <Label text="Activity UUID" labelFor="ActivityUUID"/>
+            <Input  id = "ActivityUUID-1" value="{/ActivityUUID}"  />
+            <Label text="Type" labelFor="Type-1"/>
+                <ComboBox id = "Type-1"  selectedKey="{/Type}">
+                    <items>
+                        <core:ListItem key="CALL" text="Call" />
+                        <core:ListItem key="CHAT" text="Chat" />
+                        <core:ListItem key="MESSAGE" text="Message" />
+                    </items>
+                </ComboBox>
+            <Label text="SMS Text" labelFor="Text-1"/>
+            <Input  id = "Text-1" value="{/Text}"  />
+                        <Label text="Action" labelFor="Action-1"/>
+                <ComboBox id = "Action-1"  selectedKey="{/Action}">
+                    <items>
+                        <core:ListItem key="NOTIFY" text="Notify" />
+                        <core:ListItem key="ACCEPT" text="Accept" />
+                        <core:ListItem key="END" text="End" />
+                    </items>
+                </ComboBox> -->
+            </l:VerticalLayout>
+</mvc:View>
