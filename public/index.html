@@ -28,9 +28,9 @@
 			sap.ui.getCore().attachInit(function () {
 				sap.ui
 					.xmlview({
-						viewName: 'sap.ui.c4c.widget.Simulate',
+						viewName: 'sap.ui.c4c.widget.SocketView',
 					})
-					.placeAt('content');
+					.placeAt('SocketBasedListner');
 			});
 
 			/* 			sap.ui.getCore().attachInit(function () {
@@ -52,8 +52,8 @@
 	</head>
 	<body class="sapUiBody">
 		<div id="content"></div>
-		<!-- 		<div id="SocketBasedListner"></div>
+		<div id="SocketBasedListner"></div>
 		<div id="OutboundCallView"></div>
-		<div id="AgentChatView"></div> -->
+		<div id="AgentChatView"></div>
 	</body>
 </html>
