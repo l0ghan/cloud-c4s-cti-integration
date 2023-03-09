@@ -6,11 +6,16 @@
         controllerName="sap.ui.c4c.widget.App">
     <!-- <Panel expandable="true" expanded="false" headerText="Simple Push Message" width="auto" class="sapUiResponsiveMargin"> -->
     <l:VerticalLayout>
-        <Button icon="sap-icon://settings" text="GenerateID" press="generateID"  />
-        <Input value="{/phoneNumber}" id="inputani-1"/>
-        <Button type="Accept" icon="sap-icon://my-view" text="Notify" press="onNotify"/>
-        <Button type="Accept" icon="sap-icon://incoming-call" text="Start Call" press="onAccept"/>
-        <Button type="Reject" icon="sap-icon://call" text="End Call" press="onReject"/>
+        <!-- <Text text="This page demonstrates how to push a simple message SAP C4C Live activity"></Text> -->
+        <l:HorizontalLayout  class="sapUiContentPadding">
+                <Button icon="sap-icon://settings" text="GenerateID" press="generateID"  />
+        </l:HorizontalLayout>
+        <l:HorizontalLayout  class="sapUiContentPadding">
+                <Input value="{/phoneNumber}" id="inputani-1" disable="true"/>
+                <Button type="Accept" icon="sap-icon://my-view" text="Notify" press="onNotify"  />
+                <Button type="Accept" icon="sap-icon://incoming-call" text="Start Call" press="onAccept"  />
+                <Button type="Reject" icon="sap-icon://call" text="End Call" press="onReject"  />
+        </l:HorizontalLayout>
     </l:VerticalLayout>
     <!-- </Panel> -->
 </mvc:View>
