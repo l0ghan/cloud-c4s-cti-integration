@@ -17,14 +17,14 @@
 			}'
 		></script>
 		<script>
-			sap.ui.getCore().attachInit(function () {
+			/* 			sap.ui.getCore().attachInit(function () {
 				sap.ui
 					.xmlview({
 						viewName: 'sap.ui.c4c.widget.UgapView',
 					})
 					.placeAt('UgapView');
-			});
-			/* 			sap.ui.getCore().attachInit(function () {
+			}); */
+			sap.ui.getCore().attachInit(function () {
 				sap.ui
 					.xmlview({
 						viewName: 'sap.ui.c4c.widget.App',
@@ -54,14 +54,14 @@
 						viewName: 'sap.ui.c4c.widget.chat.Agent',
 					})
 					.placeAt('AgentChatView');
-			}); */
+			});
 		</script>
 	</head>
 	<body class="sapUiBody">
-		<!-- 		<div id="content"></div>
+		<div id="content"></div>
 		<div id="SocketBasedListner"></div>
 		<div id="OutboundCallView"></div>
-		<div id="AgentChatView"></div> -->
+		<div id="AgentChatView"></div>
 		<div id="UgapView"></div>
 	</body>
 </html>
