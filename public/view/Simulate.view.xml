@@ -31,6 +31,14 @@
                         <core:ListItem key="MESSAGE" text="Message" />
                     </items>
                 </ComboBox>
+                <Label text="Action" labelFor="Action-1"/>
+                <ComboBox id = "Action-1"  selectedKey="{/Action}">
+                    <items>
+                        <core:ListItem key="NOTIFY" text="Notify" />
+                        <core:ListItem key="ACCEPT" text="Accept" />
+                        <core:ListItem key="END" text="End" />
+                    </items>
+                </ComboBox>
 <!--             <Label text="Ticket ID" labelFor="ticketid-1"/>
             <Input  id="ticketid-1" value="{/TicketID}"  />
 
