@@ -14,7 +14,7 @@
                 <Input value="{/phoneNumber}" id="inputani-1" disable="true"/>
                 <Button type="Accept" icon="sap-icon://my-view" text="Notify" press="onNotify"  />
                 <Button type="Accept" icon="sap-icon://incoming-call" text="Start Call" press="onAccept"  />
-                <Button type="Reject" icon="sap-icon://call" text="End Call" press="onReject"  />
+                <Button type="Reject" icon="sap-icon://call" text="Refuse Call" press="onReject"  />
         </l:HorizontalLayout>
     </l:VerticalLayout>
     <!-- </Panel> -->
