@@ -49,6 +49,7 @@ sap.ui.define(['sap/m/MessageToast', 'sap/ui/core/mvc/Controller'], function (Me
 			this.Data.ExternalOriginalReferenceID = Math.random().toString(36).slice(2);
 			MessageToast.show('New ID Call Generated');
 			console.log(this.Data.ExternalReferenceID);
+			console.log(this.Data.ExternalOriginalReferenceID);
 		},
 	});
 });
