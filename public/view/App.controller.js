@@ -42,7 +42,7 @@ sap.ui.define(['sap/m/MessageToast', 'sap/ui/core/mvc/Controller'], function (Me
 			param.Action = 'END';
 			param.ExternalReferenceID = this.Data.ExternalReferenceID;
 			this._SAPIntegration.sendIncomingCalltoC4C(param);
-			MessageToast.show('End Call');
+			MessageToast.show('Refuse Call');
 		},
 		generateID: function (evt) {
 			this.Data.ExternalReferenceID = Math.random().toString(36).slice(2);
