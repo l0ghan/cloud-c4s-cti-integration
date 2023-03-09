@@ -29,8 +29,8 @@ sap.ui.define(['sap/m/MessageToast', 'sap/ui/core/mvc/Controller'], function (Me
 			param.Type = 'CALL';
 			param.EventType = 'INBOUND';
 			param.Action = 'ACCEPT';
-			param.ExternalReferenceID = this.Data.ExternalReferenceID;
-			param.ExternalOriginalReferenceID = this.Data.ExternalOriginalReferenceID;
+			param.ExternalReferenceID = Math.random().toString(36).slice(2);
+			param.ExternalOriginalReferenceID = Math.random().toString(36).slice(2);
 			this._SAPIntegration.sendIncomingCalltoC4C(param);
 			MessageToast.show('Accept Call');
 		},
