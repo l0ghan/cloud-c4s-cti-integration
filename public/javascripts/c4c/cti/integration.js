@@ -31,6 +31,7 @@ c4c.cti.integration.getInstance = function () {
  */
 c4c.cti.integration.prototype.sendIncomingCalltoC4C = function (parameters) {
 	// var payload = this._formXMLPayload(parameters);
+	console.log(parameters);
 	var payload = this._formJSONPayload(parameters);
 	this._doCall(payload);
 };
